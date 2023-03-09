@@ -1,0 +1,67 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.qr-container {
+    background-color: hsl(0, 0%, 100%);
+    width: 80%;
+    border-radius: 13px;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* kinda overkill as desktop version is pretty much the same as mobile ... (I should check both and compare in future) */
+@media screen and (min-width:375px) {
+    .qr-container {
+        max-width: 300px;
+    }
+}
+
+.qr-text {
+    padding: 1rem;
+}
+
+.qr-text h1 {
+    color: hsl(218, 44%, 22%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.qr-text p {
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.qr-image {
+    border-radius: 13px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* attribution styles */
+.attribution {
+    background-color: hsl(212, 45%, 85%);
+    padding: 0 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: hsl(220, 15%, 55%);
+    font-size: 0.8rem;
+}
+
+
+.attribution a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(218, 44%, 22%);
+}
